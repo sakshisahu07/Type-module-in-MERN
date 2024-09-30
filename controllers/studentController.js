@@ -1,12 +1,7 @@
-
-
-
-
 const StuModel=require("../models/studentModel");
 const stuInformation=(req,res)=>{
     res.send("This is students information from cybrom");
 }
-
 
 const studataSave=(req, res)=>{
     console.log(req.body);
@@ -17,4 +12,3 @@ module.exports={
     stuInformation,
     studataSave
 }
-
