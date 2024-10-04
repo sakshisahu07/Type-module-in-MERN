@@ -1,12 +1,12 @@
 
 
-
-const mongoose=require("mongoose");
-const stuSchema=new mongoose.Schema({
-
+import mongoose from "mongoose";
+const stuSchema= new mongoose.Schema({
     rollno:Number,
     name:String,
-    city:String
-
+    city:String,
+    fees:Number
 })
-module.exports=mongoose.model("student",stuSchema);
+
+const StuModel=mongoose.model("student",stuSchema);
+export default StuModel;
